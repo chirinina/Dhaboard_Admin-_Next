@@ -9,7 +9,6 @@ export const Logo = () => {
   const isDesktop = useMediaQuery(`(min-width: ${BREAKPOINTS.xl}px)`);
 
   const isCollapsed = !isSideMenuOpen && isDesktop;
-
   return (
     <Link
       href="/"
@@ -21,7 +20,34 @@ export const Logo = () => {
       className="flex items-center text-2xl xl:text-xl 1xl:text-[1.3rem] 3xl:text-[1.4rem] font-medium"
     >
       <div className="menuItemLogo text-logoBg flex-shrink-0 transition-all duration-200">
-        <LogoIcon />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          fill="none"
+          className="w-10 h-10 xl:w-9 xl:h-9"
+        >
+          <path
+            d="M12 28L32 18L52 28"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M18 31V40C18 45 24 49 32 49C40 49 46 45 46 40V31"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M52 28V40"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+          <circle cx="52" cy="44" r="3" fill="currentColor" />
+        </svg>
       </div>
 
       <div
