@@ -89,10 +89,10 @@ export const CustomerModal = ({
           </div>
           <DialogFooter className="mt-8 sm:mt-12 !flex-row gap-3 sm:space-x-0 [&>*]:h-[2.9rem] [&>*]:flex-1 md:[&>*]:flex-initial md:justify-end md:[&>*]:w-38 md:gap-3">
             <DialogClose asChild>
-              <Button variant="outline">Order history</Button>
+              <Button variant="outline">Historia de Pedido</Button>
             </DialogClose>
             <DialogClose asChild>
-              <Button icon={<PhoneIcon />}>Call customer</Button>
+              <Button icon={<PhoneIcon />}>Llamar al cliente</Button>
             </DialogClose>
           </DialogFooter>
         </DialogContent>

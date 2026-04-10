@@ -31,9 +31,173 @@
     "results": "resultados",
     "itemsPerPage": "Elementos por página"
   },
+  "orders": {
+    "selectPlaceholder": {
+      "allProducts": "Todos los productos",
+      "allUsers": "Todos los usuarios",
+      "anyPrice": "Cualquier precio",
+      "anyDeliveryType": "Cualquier tipo de entrega",
+      "anyStatus": "Cualquier estado"
+    },
+    "tableHeader": {
+      "productName": "Nombre del producto",
+      "user": "Usuario",
+      "price": "Precio",
+      "deliveryType": "Tipo de entrega",
+      "date": "Fecha",
+      "status": "Estado"
+    },
+    "deliveryType": {
+      "twoDayShipping": "Envío en dos días",
+      "standardShipping": "Envío estándar",
+      "freeShipping": "Envío gratis",
+      "expressShipping": "Envío exprés"
+    },
+    "status": {
+      "inTransit": "En tránsito",
+      "delivered": "Entregado",
+      "shipped": "Enviado"
+    },
+    "button": {
+      "clearFilters": "Limpiar filtros",
+      "xlsx": "Exportar a XLSX"
+    },
+    "searchField": {
+      "searchOrders": "Buscar pedidos..."
+    },
+    "orderModal": {
+      "title": "Detalles del pedido",
+      "id": "ID",
+      "product": "Producto",
+      "customer": "Cliente",
+      "price": "Precio",
+      "shipping": "Envío",
+      "date": "Fecha",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "normal": "Normal"
+    }
+  },
+  "customers": {
+    "tableHeader": {
+      "photo": "Foto",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "city": "Ciudad",
+      "country": "País",
+      "phone": "Teléfono",
+      "totalBuys": "Dinero gastado"
+    },
+    "searchField": {
+      "searchCustomers": "Buscar clientes..."
+    },
+    "button": {
+      "clearFilters": "Limpiar filtros",
+      "clearFilter": "Limpiar filtro",
+      "filterByCountry": "Filtrar por país",
+      "sortBy": "Ordenar por",
+      "ascending": "Ascendente",
+      "descending": "Descendente",
+      "clearSorting": "Limpiar orden",
+      "xlsx": "Exportar a XLSX"
+    },
+    "country": {
+      "usa": "EE. UU.",
+      "australia": "Australia",
+      "france": "Francia",
+      "norway": "Noruega",
+      "unitedKingdom": "Reino Unido"
+    },
+    "city": {
+      "newYork": "Nueva York",
+      "munich": "Múnich",
+      "cologne": "Colonia",
+      "london": "Londres"
+    },
+    "chip": {
+      "country": "País",
+      "sortedBy": "Ordenado por"
+    },
+    "customerModal": {
+      "moneySpent": "Dinero gastado",
+      "totalOrders": "Total de pedidos",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "returns": "Devoluciones",
+      "loyaltyPoints": "Puntos de fidelidad"
+    }
+  },
+  "products": {
+    "header": {
+      "type": "Tipo",
+      "price": "Precio",
+      "markup": "Margen",
+      "profit": "Ganancia",
+      "viewPhoto": "Ver foto"
+    },
+    "metrics": {
+      "inventoryStatus": "Estado del inventario",
+      "monthlyTarget": "Meta mensual",
+      "orderFullfillment": "Cumplimiento de pedidos",
+      "conversionRate": "Tasa de conversión"
+    },
+    "pdf": {
+      "exportToPdf": "Exportar a PDF"
+    },
+    "clipboard": {
+      "copiedToClipboard": "¡Copiado al portapapeles!"
+    },
+    "mobileList": {
+      "showAllProducts": "Mostrar todos los productos"
+    }
+  },
+  "analytics": {
+    "assetPerformance": {
+      "title": "Rendimiento de activos"
+    },
+    "todaySales": {
+      "title": "Ventas de hoy"
+    },
+    "totalProfit": {
+      "title": "Ganancia total"
+    },
+    "revenueTrends": {
+      "title": "Tendencias de ingresos"
+    },
+    "yearOverview": {
+      "title": "Resumen anual"
+    },
+    "marketMetrics": {
+      "title": "Métricas del mercado"
+    },
+    "revenueDistribution": {
+      "title": "Distribución de ingresos"
+    }
+  },
+  "calendar": {
+    "deleteEventModalTitle": "¿Estás seguro?",
+    "deleteEventModalSubtitle": "Presiona sí si quieres",
+    "delete": "eliminar",
+    "move": "mover",
+    "theEvent": "el evento",
+    "yes": "Sí",
+    "cancel": "Cancelar",
+    "addEventModalTitle": "Nuevo evento",
+    "addEventModalSubtitle": "Indica la hora y el título de tu evento",
+    "addEventModalPlaceholder": "Escribe el título del evento",
+    "addEventConfirmButton": "Confirmar",
+    "addEventTitleRequiredError": "El título del evento es obligatorio",
+    "addEventLengthError": "El título supera los 20 caracteres",
+    "addEventIncorrectTime": "La hora final debe ser posterior a la inicial"
+  },
+  "singleCharts": {
+    "bars": {
+      "title": "Ventas de productos a lo largo del tiempo (USD)"
+    }
+  },
   "sideMenu": {
     "main": "Principal",
-    "dashboard": "Panel",
+    "dashboard": "Panel de control",
     "eCommerce": "Comercio electrónico",
     "orders": "Pedidos",
     "customers": "Clientes",
@@ -67,10 +231,10 @@
     "error500": "500 Error del servidor"
   },
   "navbar": {
-    "auth": "Auth",
+    "auth": "Autenticación",
     "userProfile": "Perfil de usuario",
     "about": "Acerca de",
-    "changelog": "Historial de cambios",
+    "changelog": "Registro de cambios",
     "english": "Inglés",
     "spanish": "Español",
     "changeTheme": "Cambiar tema",
@@ -78,14 +242,14 @@
     "light": "Claro",
     "dark": "Oscuro",
     "language": "Idioma",
-    "dashboard": "Panel",
     "settings": "Configuración",
     "contributing": "Contribuir",
     "signOut": "Cerrar sesión",
     "error": "Error",
     "tryAgain": "Intentar de nuevo",
-    "pageNotFound": "Ups, página no encontrada",
+    "pageNotFound": "¡Ups! Página no encontrada",
     "goToHomepage": "Ir al inicio",
+    "dashboard": "Panel de control",
     "openUserMenu": "Abrir menú de usuario",
     "notifications": "Notificaciones",
     "search": {
@@ -97,7 +261,7 @@
         "customerSatisfaction": "Satisfacción del cliente",
         "revenuePerCountry": "Ingresos por país",
         "salesCard": "Ventas",
-        "profitCard": "Ganancia",
+        "profitCard": "Ganancias",
         "trafficCard": "Tráfico",
         "customersCard": "Clientes",
         "assetPerformance": "Rendimiento de activos",
@@ -113,7 +277,7 @@
         "products": "Productos",
         "profileHeader": "Encabezado del perfil",
         "about": "Acerca de",
-        "accountSettings": "Configuración de la cuenta",
+        "accountSettings": "Configuración de cuenta",
         "recentActivity": "Actividad reciente",
         "buttons": "Botones",
         "command": "Paleta de comandos",
@@ -124,7 +288,7 @@
         "skeletons": "Skeletons",
         "dialogs": "Diálogos",
         "dropdownMenu": "Menú desplegable",
-        "badges": "Badges",
+        "badges": "Insignias",
         "popover": "Popover",
         "progress": "Progreso",
         "breadcrumbs": "Breadcrumbs",
@@ -132,16 +296,16 @@
         "separators": "Separadores",
         "pagination": "Paginación",
         "inputFields": "Campos de entrada",
-        "selectInputs": "Campos de selección",
+        "selectInputs": "Entradas de selección",
         "textarea": "Área de texto",
         "colorPicker": "Selector de color",
         "formValidation": "Validación de formularios",
-        "checkboxes": "Checkboxes",
+        "checkboxes": "Casillas de verificación",
         "radioButtons": "Botones de opción",
         "toggleSwitch": "Interruptor",
         "datePicker": "Selector de fecha",
         "fileUpload": "Carga de archivos",
-        "sliders": "Sliders",
+        "sliders": "Controles deslizantes",
         "basicTable": "Tabla básica",
         "advancedTable": "Tabla avanzada",
         "userTable": "Tabla de usuarios",
@@ -149,14 +313,14 @@
         "areaChart": "Gráfico de área",
         "scatterChart": "Gráfico de dispersión",
         "pieChart": "Gráfico circular",
-        "radarChart": "Gráfico radar",
+        "radarChart": "Gráfico de radar",
         "composedChart": "Gráfico compuesto",
         "stackedBarChart": "Gráfico de barras apiladas",
-        "radialBarChart": "Gráfico radial de barras",
-        "twoAxisLineChart": "Gráfico de líneas con dos ejes",
+        "radialBarChart": "Gráfico de barras radial",
+        "twoAxisLineChart": "Gráfico de líneas de dos ejes",
         "mixedLineChart": "Gráfico de líneas mixto",
         "verticalBarChart": "Gráfico de barras vertical",
-        "areaFillByValue": "Área rellena por valor",
+        "areaFillByValue": "Relleno de área por valor",
         "gradientPieChart": "Gráfico circular con degradado",
         "lineChart": "Gráfico de líneas"
       },
@@ -182,7 +346,7 @@
     "register": "Registrarse",
     "yourEmail": "Tu correo electrónico",
     "yourPassword": "Tu contraseña",
-    "noAccount": "¿Todavía no tienes una cuenta?",
+    "noAccount": "¿Aún no tienes cuenta?",
     "registerHere": "Regístrate aquí...",
     "createAccount": "Crear cuenta",
     "alreadyHaveAccount": "¿Ya tienes una cuenta?",
@@ -190,29 +354,29 @@
     "showPassword": "Mostrar contraseña",
     "hidePassword": "Ocultar contraseña",
     "emailFieldIsRequired": "El correo electrónico es obligatorio",
-    "pleaseEnterAValidEmail": "Introduce un correo electrónico válido",
+    "pleaseEnterAValidEmail": "Ingresa un correo electrónico válido",
     "passwordFieldIsRequired": "La contraseña es obligatoria",
     "passwordMinimumLength": "La contraseña debe tener al menos 10 caracteres",
-    "rememberMe": "Recuérdame",
+    "rememberMe": "Recordarme",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "forgotPasswordTitle": "¿Olvidaste tu contraseña?",
-    "forgotPasswordSubtitle": "Ingresa tu correo y te enviaremos un enlace para restablecerla.",
-    "sendResetLink": "Enviar enlace de restablecimiento",
+    "forgotPasswordSubtitle": "Ingresa tu correo y te enviaremos un enlace de restablecimiento.",
+    "sendResetLink": "Enviar enlace",
     "checkYourEmail": "Revisa tu correo",
-    "checkYourEmailDesc": "Si existe una cuenta con ese correo, enviamos instrucciones para restablecer la contraseña.",
+    "checkYourEmailDesc": "Si existe una cuenta con ese correo, enviamos instrucciones para restablecer tu contraseña.",
     "checkSpamFolder": "¿No lo recibiste? Revisa tu carpeta de spam.",
     "backToSignInPrefix": "Espera, ya recordé mi contraseña...",
     "backToSignInLink": "Haz clic aquí",
     "confirmPassword": "Confirmar contraseña",
-    "confirmPasswordRequired": "Confirma tu contraseña",
+    "confirmPasswordRequired": "Por favor confirma tu contraseña",
     "passwordsMustMatch": "Las contraseñas deben coincidir",
     "logoutModalTitle": "¿Estás seguro?",
     "logoutModalDesc": "Haz clic en sí para cerrar sesión en la aplicación",
     "logoutModalCancelButton": "Cancelar",
     "logoutModalConfirmButton": "Sí",
-    "logoutModalError": "No se pudo cerrar la sesión",
+    "logoutModalError": "Error al cerrar sesión",
     "authErrors": {
-      "INVALID_EMAIL_OR_PASSWORD": "Correo o contraseña incorrectos",
+      "INVALID_EMAIL_OR_PASSWORD": "Correo o contraseña no válidos",
       "INVALID_EMAIL": "Formato de correo no válido",
       "INVALID_PASSWORD": "Contraseña no válida",
       "VALIDATION_ERROR": "Datos de entrada no válidos",
@@ -221,7 +385,7 @@
       "EMAIL_ALREADY_VERIFIED": "El correo ya está verificado",
       "PASSWORD_TOO_SHORT": "La contraseña es demasiado corta",
       "PASSWORD_TOO_LONG": "La contraseña es demasiado larga",
-      "SESSION_EXPIRED": "La sesión expiró. Vuelve a iniciar sesión.",
+      "SESSION_EXPIRED": "La sesión expiró. Por favor inicia sesión de nuevo.",
       "SESSION_FAILED": "Error de sesión. Inténtalo de nuevo.",
       "FAILED_TO_CREATE_USER": "No se pudo crear la cuenta. Inténtalo de nuevo.",
       "ACCOUNT_ERROR": "Error de cuenta. Inténtalo de nuevo.",
@@ -230,12 +394,12 @@
       "PROVIDER_ERROR": "Error del proveedor de autenticación",
       "SECURITY_ERROR": "Solicitud bloqueada por razones de seguridad",
       "INVALID_REQUEST": "Solicitud no válida",
-      "EMAIL_UPDATE_BLOCKED": "El correo no puede actualizarse",
+      "EMAIL_UPDATE_BLOCKED": "El correo no puede ser actualizado",
       "PASSWORD_ALREADY_SET": "La contraseña ya está establecida",
       "SIGNUP_DISABLED": "El registro está deshabilitado actualmente",
       "signInDefaultError": "Error al iniciar sesión",
       "signUpDefaultError": "Error al registrarse",
-      "networkError": "No se pudo conectar al servidor. Inténtalo de nuevo."
+      "networkError": "No se puede conectar al servidor. Inténtalo de nuevo."
     }
   },
   "breadcrumbs": {
@@ -254,6 +418,78 @@
     "ecommerce": "Comercio electrónico",
     "components": "Componentes"
   },
+  "profile": {
+    "memberSince": "Miembro desde",
+    "editProfile": "Editar perfil",
+    "saveChanges": "Guardar cambios",
+    "contactInformation": "Información de contacto",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "socialLinks": "Enlaces sociales",
+    "quickStats": "Estadísticas rápidas",
+    "totalOrders": "Total de pedidos",
+    "completedTasks": "Tareas completadas",
+    "activeProjects": "Proyectos activos",
+    "about": "Acerca de",
+    "accountSettings": "Configuración de cuenta",
+    "emailNotifications": "Notificaciones por correo",
+    "emailNotificationsDesc": "Recibir actualizaciones de tu cuenta por correo",
+    "twoFactorAuth": "Autenticación de dos factores",
+    "twoFactorAuthDesc": "Añade una capa extra de seguridad a tu cuenta",
+    "darkMode": "Modo oscuro",
+    "darkModeDesc": "Activar el tema de modo oscuro",
+    "recentActivity": "Actividad reciente"
+  },
+  "uiElements": {
+    "buttons": "Botones",
+    "alerts": "Alertas",
+    "command": "Comando",
+    "avatars": "Avatares",
+    "tabs": "Pestañas",
+    "skeletons": "Skeletons",
+    "dialogs": "Diálogos",
+    "badges": "Insignias",
+    "popover": "Popover",
+    "progress": "Progreso",
+    "tooltips": "Tooltips",
+    "breadcrumbs": "Breadcrumbs",
+    "separators": "Separadores",
+    "dropdownMenu": "Menú desplegable",
+    "pagination": "Paginación",
+    "toasts": "Toasts",
+    "toastInfoTitle": "Información",
+    "toastInfoDesc": "Esta es una notificación informativa.",
+    "toastErrorTitle": "Error",
+    "toastErrorDesc": "Algo salió mal. Inténtalo de nuevo.",
+    "toastSuccessTitle": "Éxito",
+    "toastSuccessDesc": "Tus cambios se han guardado correctamente."
+  },
+  "forms": {
+    "inputFields": "Campos de entrada",
+    "selectInputs": "Entradas de selección",
+    "textarea": "Área de texto",
+    "colorPicker": "Selector de color",
+    "formValidation": "Validación de formularios",
+    "fileUpload": "Carga de archivos",
+    "checkboxes": "Casillas de verificación",
+    "radioButtons": "Botones de opción",
+    "toggleSwitch": "Interruptor",
+    "datePicker": "Selector de fecha",
+    "sliders": "Controles deslizantes"
+  },
+  "tables": {
+    "basicTable": "Tabla básica",
+    "advancedTable": "Tabla avanzada",
+    "userTable": "Tabla de usuarios",
+    "inventoryTable": "Tabla de inventario",
+    "cardTitles": {
+      "basicTable": "Tabla básica",
+      "searchAndSelection": "Tabla con búsqueda y selección",
+      "filters": "Tabla con filtros",
+      "pagination": "Tabla con paginación"
+    }
+  },
   "dateRange": {
     "today": "Hoy",
     "last7days": "Últimos 7 días",
@@ -266,16 +502,16 @@
     "to": "Hasta",
     "apply": "Aplicar",
     "cancel": "Cancelar",
-    "dialogTitle": "Selecciona un rango global de fechas"
+    "dialogTitle": "Selecciona rango de fechas global"
   },
   "settings": {
-    "title": "Panel",
+    "title": "Configuración",
     "theme": "Tema",
-    "selectTheme": "Selecciona un tema",
+    "selectTheme": "Seleccionar tema",
     "light": "Claro",
     "dark": "Oscuro",
     "system": "Sistema",
-    "homepageLayout": "Diseño de la página principal",
+    "homepageLayout": "Diseño de inicio",
     "threeCards": "Tres tarjetas",
     "fourCards": "Cuatro tarjetas",
     "accentColor": "Color primario",
@@ -295,40 +531,40 @@
     "markRead": "Marcar como leída",
     "noNotifications": "No hay notificaciones para mostrar"
   },
-  "calendar": {
-    "deleteEventModalTitle": "¿Estás seguro?",
-    "deleteEventModalSubtitle": "Presiona sí si quieres",
-    "delete": "eliminar",
-    "move": "mover",
-    "theEvent": "el evento",
-    "yes": "Sí",
-    "cancel": "Cancelar",
-    "addEventModalTitle": "Nuevo evento",
-    "addEventModalSubtitle": "Indica la hora y el título de tu evento",
-    "addEventModalPlaceholder": "Escribe el título del evento",
-    "addEventConfirmButton": "Confirmar",
-    "addEventTitleRequiredError": "El título del evento es obligatorio",
-    "addEventLengthError": "El título supera los 20 caracteres",
-    "addEventIncorrectTime": "La hora final debe ser posterior a la inicial"
+  "charts": {
+    "areaChart": "Gráfico de área",
+    "scatterChart": "Gráfico de dispersión",
+    "pieChart": "Gráfico circular",
+    "radarChart": "Gráfico de radar",
+    "composedChart": "Gráfico compuesto",
+    "stackedBarChart": "Gráfico de barras apiladas",
+    "radialBarChart": "Gráfico de barras radial",
+    "twoAxisLineChart": "Línea de dos ejes",
+    "mixedLineChart": "Línea mixta",
+    "verticalBarChart": "Barras verticales",
+    "lineChart": "Gráfico de líneas",
+    "areaFillByValueChart": "Relleno de área por valor",
+    "gradientPieChart": "Gráfico circular con degradado",
+    "lineAreaChart": "Tendencia de pedidos y devoluciones"
   },
   "errorPages": {
     "backToHomepage": "Volver al inicio",
     "tryAgain": "Intentar de nuevo",
     "unexpectedError": {
       "title": "Algo salió mal",
-      "description": "Ocurrió un error inesperado al cargar esta página. Puedes intentarlo de nuevo o volver al inicio."
+      "description": "Ocurrió un error inesperado al cargar esta página. Puedes intentar de nuevo o volver al inicio."
     },
     "error401": {
       "title": "No autorizado",
-      "description": "No tienes permisos para acceder a esta página. Inicia sesión con credenciales válidas para continuar."
+      "description": "No tienes permiso para acceder a esta página. Inicia sesión con credenciales válidas para continuar."
     },
     "error404": {
       "title": "Página no encontrada",
-      "description": "La página que buscas pudo haberse movido, eliminado o quizá nunca existió."
+      "description": "La página que buscas puede haber sido movida, eliminada o nunca existió."
     },
     "error500": {
       "title": "Error del servidor",
-      "description": "Algo salió mal de nuestro lado. Los servidores encontraron un error inesperado mientras procesaban tu solicitud."
+      "description": "Algo salió mal de nuestra parte. Nuestros servidores encontraron un error inesperado al procesar tu solicitud."
     }
   }
 }

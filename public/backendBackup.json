@@ -2883,17 +2883,17 @@
   "notifications": [
     {
       "id": "1",
-      "title": "Update complete",
-      "description": "Restart server to complete update.",
-      "time": "Today",
+      "title": "Actualizacion Completada",
+      "description": "Tu base de datos ha sido actualizada exitosamente.",
+      "time": "Hoy",
       "icon": "update",
       "isNew": true
     },
     {
       "id": "2",
-      "title": "New connection",
-      "description": "Anna accepted your request.",
-      "time": "Yesterday",
+      "title": "Nueva Conexion",
+      "description": "Anna Smith se ha conectado a tu cuenta desde un nuevo dispositivo.",
+      "time": "Ayer",
       "icon": "users",
       "isNew": true
     },
