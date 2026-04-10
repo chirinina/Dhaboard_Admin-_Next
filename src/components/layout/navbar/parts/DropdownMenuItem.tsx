@@ -1,0 +1,99 @@
+import { Children, ReactNode } from "react";
+
+import { ArrowDownSimpleIcon } from "@/assets/icons/ArrowDownSimpleIcon";
+
+interface ExpandableDropdownSectionProps {
+  children: ReactNode;
+}
+
+const ExpandableDropdownSection = ({
+  children,
+}: ExpandableDropdownSectionProps) => {
+  const childArray = Children.toArray(children);
+  const lastIndex = childArray.length - 1;
+
+  return (
+    <div className="bg-primaryBg/10 relative" role="menu">
+      <div className="ml-[2.4rem] pl-[0.8rem]">
+        {childArray.map((child, index) => {
+          const isLast = index === lastIndex;
+          return (
+            <div key={index} className="relative">
+              {isLast ? (
+                <div className="absolute left-[-1.6rem] top-0 h-1/2 w-[calc(0.75rem+2px)] border-l-2 border-b-2 border-mainBorder rounded-bl-sm z-10 pointer-events-none" />
+              ) : (
+                <>
+                  <div className="absolute left-[-1.6rem] top-0 bottom-0 w-0.5 bg-mainBorder z-10 pointer-events-none" />
+                  <div className="absolute left-[calc(-1.6rem+2px)] top-1/2 w-3 h-0.5 bg-mainBorder z-10 pointer-events-none" />
+                </>
+              )}
+              {child}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+interface DropdownMenuItemProps {
+  icon: ReactNode;
+  label: string;
+  isOpen: boolean;
+  onToggle: () => void;
+  children: ReactNode;
+}
+
+export const DropdownMenuItem = ({
+  icon,
+  label,
+  isOpen,
+  onToggle,
+  children,
+}: DropdownMenuItemProps) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onToggle();
+    }
+    if (e.key === "ArrowRight" && !isOpen) {
+      e.preventDefault();
+      onToggle();
+    }
+    if (e.key === "ArrowLeft" && isOpen) {
+      e.preventDefault();
+      onToggle();
+    }
+  };
+
+  return (
+    <div role="none">
+      <div
+        className="px-4 py-2.5 flex items-center justify-between hover:bg-mainColor/10 transition-all duration-300 cursor-pointer group focus-visible:bg-mainColor/15"
+        onClick={onToggle}
+        onKeyDown={handleKeyDown}
+        tabIndex={-1}
+        role="menuitem"
+        aria-haspopup="menu"
+        aria-expanded={isOpen}
+      >
+        <div className="flex items-center">
+          <div className="w-5 flex justify-center items-center text-grayIcon mr-3 group-hover:text-mainColor transition-all duration-300 stroke-grayIcon fill-grayIcon group-hover:stroke-mainColor group-hover:fill-mainColor">
+            {icon}
+          </div>
+          <span className="font-medium group-hover:text-mainColor transition-colors">
+            {label}
+          </span>
+        </div>
+        <div
+          className={`text-secondaryText transition-all duration-300 group-hover:text-mainColor ${isOpen ? "rotate-180" : ""}`}
+        >
+          <ArrowDownSimpleIcon />
+        </div>
+      </div>
+      {isOpen && (
+        <ExpandableDropdownSection>{children}</ExpandableDropdownSection>
+      )}
+    </div>
+  );
+};
