@@ -111,14 +111,14 @@ export const TodaySales = ({ todaySalesData }: TodaySalesProps) => {
               value="yesterday"
               className="text-xs 1xl:text-sm"
             >
-              Today vs. Yesterday
+              Hoy vs Ayer
             </TabsTrigger>
             <TabsTrigger
               variant="line"
               value="average"
               className="text-xs 1xl:text-sm"
             >
-              Today vs. Average
+              Hoy vs Promedio
             </TabsTrigger>
           </TabsList>
           <TabsContent value="yesterday">

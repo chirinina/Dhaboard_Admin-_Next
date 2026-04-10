@@ -32,18 +32,18 @@ type Transaction = {
   email: string;
   product: string;
   amount: number;
-  status: "completed" | "pending" | "failed";
+  status: "completado" | "pendiente" | "fallido";
   date: string;
 };
 
 const advancedTableData: Transaction[] = [
   {
     id: "TXN001",
-    customer: "John Doe",
-    email: "john@example.com",
+    customer: "Efrain Chiri",
+    email: "chiri@example.com",
     product: "Laptop Pro",
     amount: 1299.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-15",
   },
   {
@@ -52,7 +52,7 @@ const advancedTableData: Transaction[] = [
     email: "jane@example.com",
     product: "Wireless Mouse",
     amount: 29.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-16",
   },
   {
@@ -61,7 +61,7 @@ const advancedTableData: Transaction[] = [
     email: "bob@example.com",
     product: "Mechanical Keyboard",
     amount: 89.99,
-    status: "pending",
+    status: "pendiente",
     date: "2024-01-17",
   },
   {
@@ -70,7 +70,7 @@ const advancedTableData: Transaction[] = [
     email: "alice@example.com",
     product: "Monitor 4K",
     amount: 499.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-18",
   },
   {
@@ -79,7 +79,7 @@ const advancedTableData: Transaction[] = [
     email: "charlie@example.com",
     product: "USB-C Hub",
     amount: 45.99,
-    status: "failed",
+    status: "fallido",
     date: "2024-01-19",
   },
   {
@@ -88,7 +88,7 @@ const advancedTableData: Transaction[] = [
     email: "diana@example.com",
     product: "Webcam HD",
     amount: 69.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-20",
   },
   {
@@ -97,7 +97,7 @@ const advancedTableData: Transaction[] = [
     email: "eva@example.com",
     product: "Desk Lamp",
     amount: 34.99,
-    status: "pending",
+    status: "pendiente",
     date: "2024-01-21",
   },
   {
@@ -106,7 +106,7 @@ const advancedTableData: Transaction[] = [
     email: "frank@example.com",
     product: "Ergonomic Chair",
     amount: 199.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-22",
   },
   {
@@ -115,7 +115,7 @@ const advancedTableData: Transaction[] = [
     email: "grace@example.com",
     product: "Laptop Stand",
     amount: 45.99,
-    status: "completed",
+    status: "completado",
     date: "2024-01-23",
   },
   {
@@ -124,7 +124,7 @@ const advancedTableData: Transaction[] = [
     email: "henry@example.com",
     product: "Portable SSD",
     amount: 129.99,
-    status: "pending",
+    status: "pendiente",
     date: "2024-01-24",
   },
 ];
@@ -139,10 +139,10 @@ const advancedTableData: Transaction[] = [
 const StatusBadge = ({ status }: { status: string }) => {
   const getStatusColor = (status: string) => {
     switch (status.toLowerCase()) {
-      case "completed":
+      case "completado":
       case "in stock":
         return "bg-green-500/10 text-green-500 border-green-500/20";
-      case "pending":
+      case "pendiente":
       case "low stock":
         return "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
       case "failed":
@@ -218,25 +218,25 @@ export const AdvancedTable = () => {
         <Checkbox
           checked={row.getIsSelected()}
           onCheckedChange={(value) => row.toggleSelected(!!value)}
-          aria-label="Select row"
+          aria-label="Seleccionar fila"
         />
       ),
       enableSorting: false,
     },
     {
       accessorKey: "id",
-      header: "Transaction ID",
+      header: "ID de transacción",
       cell: ({ row }) => (
         <span className="font-mono text-sm">{row.getValue("id")}</span>
       ),
     },
     {
       accessorKey: "customer",
-      header: "Customer",
+      header: "Cliente",
     },
     {
       accessorKey: "email",
-      header: "Email",
+      header: "Correo electrónico",
       cell: ({ row }) => (
         <span className="text-sm text-secondaryText">
           {row.getValue("email")}
@@ -245,11 +245,11 @@ export const AdvancedTable = () => {
     },
     {
       accessorKey: "product",
-      header: "Product",
+      header: "Producto",
     },
     {
       accessorKey: "amount",
-      header: "Amount",
+      header: "Monto",
       cell: ({ row }) => {
         const amount = parseFloat(row.getValue("amount"));
         return <span className="font-medium">${amount.toFixed(2)}</span>;
@@ -257,12 +257,12 @@ export const AdvancedTable = () => {
     },
     {
       accessorKey: "status",
-      header: "Status",
+      header: "Estado",
       cell: ({ row }) => <StatusBadge status={row.getValue("status")} />,
     },
     {
       accessorKey: "date",
-      header: "Date",
+      header: "Fecha",
       cell: ({ row }) => {
         const date = new Date(row.getValue("date"));
         return <span className="text-sm">{date.toLocaleDateString()}</span>;
@@ -270,7 +270,7 @@ export const AdvancedTable = () => {
     },
     {
       id: "actions",
-      header: "Actions",
+      header: "Acciones",
       cell: () => (
         <div className="flex gap-2">
           <Button
@@ -329,16 +329,16 @@ export const AdvancedTable = () => {
           >
             <div className="flex items-center gap-2 max-xsm:w-full">
               <Input
-                placeholder="Search..."
+                placeholder="Buscar..."
                 value={globalFilter ?? ""}
                 onChange={(event) => setGlobalFilter(event.target.value)}
                 className="w-64 max-xsm:w-[80%] flex-shrink-0"
               />
               {Object.keys(rowSelection).length > 0 && (
                 <span className="text-sm text-secondaryText whitespace-nowrap">
-                  {Object.keys(rowSelection).length} of{" "}
-                  {advancedTable.getFilteredRowModel().rows.length} row(s)
-                  selected
+                  {Object.keys(rowSelection).length} de{" "}
+                  {advancedTable.getFilteredRowModel().rows.length} fila(s)
+                  seleccionadas
                 </span>
               )}
             </div>
@@ -348,7 +348,7 @@ export const AdvancedTable = () => {
           <div className="overflow-x-auto">
             <table className="w-full min-w-200">
               <caption className="sr-only">
-                Advanced data table with selection
+                Tabla de datos avanzada con selección
               </caption>
               <thead>
                 {advancedTable.getHeaderGroups().map((headerGroup) => (
@@ -359,9 +359,9 @@ export const AdvancedTable = () => {
                         scope="col"
                         aria-sort={
                           header.column.getIsSorted() === "asc"
-                            ? "ascending"
+                            ? "ascendente"
                             : header.column.getIsSorted() === "desc"
-                              ? "descending"
+                              ? "descendente"
                               : undefined
                         }
                         className={`text-secondaryText font-medium text-left text-sm px-4 py-3 whitespace-nowrap bg-tableHeaderBg border-t border-b border-inputBorder ${

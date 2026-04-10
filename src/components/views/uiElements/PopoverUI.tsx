@@ -87,7 +87,9 @@ export const PopoverUI = () => {
                     <AvatarFallback>JD</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h4 className="font-medium text-primaryText">John Doe</h4>
+                    <h4 className="font-medium text-primaryText">
+                      Efrain Chiri
+                    </h4>
                     <p className="text-sm text-secondaryText">
                       john.doe@example.com
                     </p>

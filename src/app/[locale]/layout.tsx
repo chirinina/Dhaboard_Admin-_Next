@@ -66,8 +66,8 @@ export const metadata: Metadata = {
     "better auth",
     "dashboard starter",
   ],
-  authors: [{ name: "matt765", url: "https://github.com/matt765" }],
-  creator: "matt765",
+  authors: [{ name: "chirinina", url: "https://github.com/chirinina" }],
+  creator: "chirinina",
   openGraph: {
     type: "website",
     locale: "en_US",

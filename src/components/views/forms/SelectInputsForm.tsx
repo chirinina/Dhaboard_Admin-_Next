@@ -63,26 +63,26 @@ export const SelectInputsForm = () => {
       <CardContent>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 w-3/4 xsm:w-1/2">
-            <Label>Select Option</Label>
+            <Label>Selecciona una fruta</Label>
             <Select>
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select a fruit" />
+                <SelectValue placeholder="Selecciona una fruta" />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Fruits</SelectLabel>
-                  <SelectItem value="apple">Apple</SelectItem>
+                  <SelectLabel>Frutas</SelectLabel>
+                  <SelectItem value="apple">Manzana</SelectItem>
                   <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
+                  <SelectItem value="blueberry">Arándano</SelectItem>
+                  <SelectItem value="grapes">Uvas</SelectItem>
+                  <SelectItem value="pineapple">Piña</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
           </div>
 
           <div className="flex flex-col gap-3 w-3/4 xsm:w-1/2">
-            <Label>Combobox (Searchable)</Label>
+            <Label>Selecciona un framework</Label>
             <Popover open={openCombobox} onOpenChange={setOpenCombobox}>
               <PopoverTrigger asChild>
                 <Button
@@ -95,15 +95,17 @@ export const SelectInputsForm = () => {
                     ? frameworks.find(
                         (framework) => framework.value === comboboxValue,
                       )?.label
-                    : "Select framework..."}
+                    : "Selecciona un framework..."}
                   <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-50 p-0" align="start">
                 <Command>
-                  <CommandInput placeholder="Search framework..." />
+                  <CommandInput placeholder="Busca un framework..." />
                   <CommandList>
-                    <CommandEmpty>No framework found.</CommandEmpty>
+                    <CommandEmpty>
+                      No se encontro ningun framework.
+                    </CommandEmpty>
                     <CommandGroup>
                       {frameworks.map((framework) => (
                         <CommandItem

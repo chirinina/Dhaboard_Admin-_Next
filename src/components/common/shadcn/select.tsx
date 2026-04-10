@@ -12,10 +12,10 @@ import { cn } from "@/utils/classNames";
  * ```tsx
  * <Select value={value} onValueChange={setValue}>
  *   <SelectTrigger>
- *     <SelectValue placeholder="Select option" />
+ *     <SelectValue placeholder="Selecciona una opción" />
  *   </SelectTrigger>
  *   <SelectContent>
- *     <SelectItem value="1">Option 1</SelectItem>
+ *     <SelectItem value="1">Opción 1</SelectItem>
  *   </SelectContent>
  * </Select>
  * ```

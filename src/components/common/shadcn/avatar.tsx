@@ -54,7 +54,7 @@ Avatar.displayName = AvatarPrimitive.Root.displayName;
  * // Standard avatar image
  * <AvatarImage
  *   src="https://api.example.com/avatar/123"
- *   alt="John Doe's avatar"
+ *   alt="Efrain Chiri's avatar"
  * />
  * ```
  */

@@ -1,20 +1,20 @@
 # Contributing guide
 
-Hi there! 👋 Thanks for checking out this project.
-Every form of contribution is valuable. Below are the main ways to get involved:
+¡Hola! 👋 Gracias por revisar este proyecto.
+Toda forma de contribución es valiosa. A continuación se muestran las principales formas de participar:
 
 ## 1. Share Feedback and Ideas 💡
 
-- Use the **[Discussions](https://github.com/Diolay/Diolay/discussions/1)** on GitHub to share feedback, suggestions, or ideas for improvement.
-- Open an **[Issue](https://github.com/Diolay/Diolay/issues)** if you've found a bug or something doesn't work as expected.
+- Usa las **[Discussions](https://github.com/Diolay/Diolay/discussions/1)** en GitHub para compartir comentarios, sugerencias o ideas de mejora.
+- Abre un **[Issue](https://github.com/Diolay/Diolay/issues)** si has encontrado un error o algo no funciona como se esperaba.
 
 ## 2. Support Development 🔥
 
-If you'd like to support continued work on the project, you can do so through [**GitHub Sponsors**](https://github.com/sponsors/matt765).
+Si deseas apoyar el desarrollo continuo del proyecto, puedes hacerlo a través de [**GitHub Sponsors**](https://github.com/sponsors/chirinina).
 
 ## 3. Contribute code
 
-Feel free to fork the repository and submit a merge requests. If you've spotted something that can be improved or fixed, your input is more than welcome.
+Siéntete libre de bifurcar el repositorio y enviar una solicitud de fusión. Si has detectado algo que se puede mejorar o arreglar, tu aporte es más que bienvenido.
 
 ### Development setup
 
@@ -25,49 +25,49 @@ npm install
 npm run dev
 ```
 
-The app runs at `http://localhost:3000` in standalone mode with mock data - no backend needed.
+La aplicación se ejecuta en `http://localhost:3000` en modo independiente con datos simulados, sin necesidad de backend.
 
-To browse and develop UI components in isolation, run Storybook:
+Para explorar y desarrollar componentes de UI de forma aislada, ejecuta Storybook:
 
 ```bash
 npm run storybook
 ```
 
-It opens at `http://localhost:6006`. Stories live alongside components in `stories/` directories.
+Se abre en `http://localhost:6006`. Las historias viven junto con los componentes en los directorios `stories/`.
 
 ### Submitting a pull request
 
-1. Fork the repository
-2. Create a branch from `main` (`git checkout -b my-fix`)
-3. Make your changes
-4. Run checks before pushing:
+1. Bifurca el repositorio
+2. Crea una rama desde `main` (`git checkout -b my-fix`)
+3. Realiza tus cambios
+4. Ejecuta las verificaciones antes de empujar:
    ```bash
    npm run lint
    npm run type-check
    npm run test
    ```
-5. Push and open a pull request against `main`
+5. Empuja y abre una solicitud de extracción contra `main`
 
-Husky pre-commit hooks will automatically run ESLint and Prettier on staged files.
+Los hooks de pre-commit de Husky ejecutarán automáticamente ESLint y Prettier en los archivos preparados.
 
 ### Code conventions
 
-- Named exports over default exports
-- Arrow functions over function declarations
-- Keep files under 300 lines - split into smaller modules if needed
-- Group imports: external libraries first, then internal imports, separated by blank lines
-- Use `async/await` with `try/catch` instead of `.then()/.catch()`
-- Always log errors in `catch` blocks
-- Test in both dark and light mode when touching UI
-- If you add or change a UI component, check that existing stories still render correctly in Storybook
+- Prefer exports nombradas sobre las predeterminadas
+- Preferir funciones flecha sobre declaraciones de función
+- Mantener los archivos por debajo de 300 líneas; dividirlos en módulos más pequeños si es necesario
+- Agrupar importaciones: primero las bibliotecas externas, luego las importaciones internas, separadas por líneas en blanco
+- Usar `async/await` con `try/catch` en lugar de `.then()/.catch()`
+- Siempre registrar los errores en bloques `catch`
+- Probar en modo oscuro y claro al tocar la UI
+- Si agregas o cambias un componente de UI, verifica que las historias existentes sigan renderizándose correctamente en Storybook
 
 ### What makes a good PR
 
-- Focused - one concern per PR
-- Passes all CI checks (lint, type-check, tests, build)
-- Includes a clear description of what changed and why
-- Does not introduce console errors or warnings
+- Enfocado: una preocupación por PR
+- Pasa todas las verificaciones de CI (lint, type-check, tests, build)
+- Incluye una descripción clara de lo que cambió y por qué
+- No introduce errores o advertencias de consola
 
 ## License Information for Contributors
 
-By submitting a contribution to this project, you agree that your contributions are licensed under the MIT License.
+Al enviar una contribución a este proyecto, aceptas que tus contribuciones están licenciadas bajo la Licencia MIT.

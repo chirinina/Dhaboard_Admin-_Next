@@ -30,23 +30,23 @@ export const ToggleSwitchForm = () => {
           <div className="flex items-center space-x-4">
             <Switch id="airplane-mode" />
             <Label htmlFor="airplane-mode" withPointer>
-              Default Switch
+              Switch por defecto
             </Label>
           </div>
           <div className="flex items-center space-x-4">
             <Switch id="checked-switch" defaultChecked />
             <Label htmlFor="checked-switch" withPointer>
-              Checked Switch
+              Switch activado
             </Label>
           </div>
           <div className="flex items-center space-x-4">
             <Switch id="disabled-switch" disabled />
-            <Label htmlFor="disabled-switch">Disabled Switch</Label>
+            <Label htmlFor="disabled-switch">Switch desactivado</Label>
           </div>
           <div className="flex items-center space-x-4">
             <Switch id="disabled-checked-switch" disabled defaultChecked />
             <Label htmlFor="disabled-checked-switch">
-              Disabled Checked Switch
+              Switch desactivado y activado
             </Label>
           </div>
         </div>

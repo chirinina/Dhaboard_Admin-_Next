@@ -1,3 +1,5 @@
+import { Facebook, Github, Globe, Instagram, Linkedin } from "lucide-react";
+
 import {
   Dialog,
   DialogContent,
@@ -15,6 +17,34 @@ export const ContributingModal = ({
 }: AboutModalProps) => {
   const { scrollRef, handleKeyDown, handleOpenAutoFocus } =
     useModalKeyboardScroll();
+
+  const socialLinks = [
+    {
+      name: "GitHub",
+      href: "https://github.com/Diolay",
+      icon: Github,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/",
+      icon: Linkedin,
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/",
+      icon: Instagram,
+    },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/",
+      icon: Facebook,
+    },
+    {
+      name: "Sitio web",
+      href: "https://diolay.com",
+      icon: Globe,
+    },
+  ];
 
   return (
     <Dialog open={true} onOpenChange={(open) => !open && closeModal()}>
@@ -36,63 +66,63 @@ export const ContributingModal = ({
         >
           <DialogHeader>
             <DialogTitle className="text-primaryText text-3xl md:text-2xl 1xl:text-3xl w-full text-left mb-4">
-              Contributing guide
+              Guía de contribución
             </DialogTitle>
           </DialogHeader>
+
           <DialogDescription asChild>
             <div className="text-primaryText text-base md:text-sm 1xl:text-base w-full text-left">
-              <p className="mb-4">
-                Hi there! 👋 Thanks for checking out this project.
+              <p className="mb-4 leading-relaxed">
+                Hola, gracias por revisar este proyecto.
                 <br />
-                Every form of contribution is valuable. Below are the main ways
-                to get involved:
+                Toda forma de contribución aporta valor. A continuación se
+                muestran las principales maneras de participar.
               </p>
 
               <h3 className="text-xl md:text-lg 1xl:text-xl font-semibold mt-6 mb-3">
-                1. Share Feedback and Ideas 💡
+                1. Comparte tus ideas
               </h3>
-              <ul className="list-disc list-inside mb-4 pl-3 text-primaryText">
-                <li className="mb-2">
-                  Use the{" "}
+
+              <ul className="list-disc list-inside mb-4 pl-3 text-primaryText space-y-2">
+                <li>
+                  Usa las{" "}
                   <a
                     href="https://github.com/Diolay/Diolay/discussions/1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    tabIndex={0}
                     className="text-coloredLinkText hover:underline"
                   >
-                    Discussions
+                    discusiones
                   </a>{" "}
-                  on GitHub to share feedback, suggestions, or ideas for
-                  improvement.
+                  de GitHub para compartir sugerencias, comentarios o nuevas
+                  ideas.
                 </li>
+
                 <li>
-                  Open an{" "}
+                  Abre un{" "}
                   <a
                     href="https://github.com/Diolay/Diolay/issues"
                     target="_blank"
                     rel="noopener noreferrer"
-                    tabIndex={0}
                     className="text-coloredLinkText hover:underline"
                   >
-                    Issue
+                    issue
                   </a>{" "}
-                  if you&apos;ve found a bug or something doesn&apos;t work as
-                  expected.
+                  si encuentras errores o detectas mejoras.
                 </li>
               </ul>
 
               <h3 className="text-xl md:text-lg 1xl:text-xl font-semibold mt-6 mb-3">
-                2. Support Development 🔥
+                2. Apoya el desarrollo
               </h3>
-              <p className="mb-4">
-                If you&apos;d like to support continued work on the project, you
-                can do so through{" "}
+
+              <p className="mb-4 leading-relaxed">
+                Si deseas apoyar el crecimiento continuo del proyecto, puedes
+                hacerlo a través de{" "}
                 <a
-                  href="https://github.com/sponsors/matt765"
+                  href="https://github.com/sponsors/chirinina"
                   target="_blank"
                   rel="noopener noreferrer"
-                  tabIndex={0}
                   className="text-coloredLinkText hover:underline"
                 >
                   GitHub Sponsors
@@ -101,35 +131,65 @@ export const ContributingModal = ({
               </p>
 
               <h3 className="text-xl md:text-lg 1xl:text-xl font-semibold mt-6 mb-3">
-                3. Contribute code
+                3. Contribuye con código
               </h3>
-              <p className="mb-4">
-                Feel free to fork the repository and submit a merge requests. If
-                you&apos;ve spotted something that can be improved or fixed,
-                your input is more than welcome.
+
+              <p className="mb-4 leading-relaxed">
+                Puedes bifurcar el repositorio y enviar una solicitud de fusión.
+                Si detectas algo que se puede mejorar o corregir, tu aporte será
+                bien recibido.
               </p>
 
-              <p className="mb-4">
-                For more details on development setup, code conventions, and the
-                pull request process, check out the{" "}
+              <p className="mb-4 leading-relaxed">
+                Para más detalles sobre configuración, estándares de código y
+                proceso de revisión, consulta{" "}
                 <a
                   href="https://github.com/Diolay/Diolay/blob/main/CONTRIBUTING.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  tabIndex={0}
                   className="text-coloredLinkText hover:underline"
                 >
                   CONTRIBUTING.md
-                </a>{" "}
-                on GitHub.
+                </a>
+                .
               </p>
 
               <h3 className="text-xl md:text-lg 1xl:text-xl font-semibold mt-6 mb-3">
-                License Information for Contributors
+                Redes y canales oficiales
               </h3>
-              <p className="mb-4">
-                By submitting a contribution to this project, you agree that
-                your contributions are licensed under the MIT License.
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                {socialLinks.map(({ name, href, icon: Icon }) => (
+                  <a
+                    key={name}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 rounded-xl border border-mainBorder bg-cardBg px-4 py-3 transition-all duration-200 hover:border-coloredLinkText hover:bg-hoverBg"
+                  >
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondaryBg text-coloredLinkText">
+                      <Icon className="h-5 w-5" />
+                    </div>
+
+                    <div className="flex flex-col">
+                      <span className="font-medium text-primaryText">
+                        {name}
+                      </span>
+                      <span className="text-sm text-secondaryText">
+                        Visitar perfil oficial
+                      </span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+
+              <h3 className="text-xl md:text-lg 1xl:text-xl font-semibold mt-6 mb-3">
+                Información de licencia
+              </h3>
+
+              <p className="mb-4 leading-relaxed">
+                Al enviar una contribución, aceptas que tu aporte quede
+                licenciado bajo la Licencia MIT.
               </p>
             </div>
           </DialogDescription>

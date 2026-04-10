@@ -45,7 +45,7 @@ export const DatePickerForm = () => {
       </CardHeader>
       <CardContent>
         <div className="flex flex-col gap-[0.8rem]">
-          <Label>Select Date</Label>
+          <Label>Seleccionar fecha</Label>
           <div className="flex relative h-[2.3rem] w-40">
             <DatePicker
               ref={datePickerRef}

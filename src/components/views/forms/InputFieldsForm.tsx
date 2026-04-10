@@ -39,25 +39,25 @@ export const InputFieldsForm = () => {
       <CardContent>
         <div className="flex flex-col gap-6">
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="email">Default Input</Label>
-            <Input type="text" id="email" placeholder="Default Input" />
+            <Label htmlFor="email">Campo de texto</Label>
+            <Input type="text" id="email" placeholder="Campo de texto" />
           </div>
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="active">Active Input</Label>
+            <Label htmlFor="active">Campo activo</Label>
             <Input
               type="text"
               id="active"
-              placeholder="Active Input"
+              placeholder="Campo activo"
               className="border-focusVisibleBorder hover:border-focusVisibleBorder focus:!border-focusVisibleBorder"
             />
           </div>
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="password">Password Input</Label>
+            <Label htmlFor="password">Campo de contraseña</Label>
             <InputGroup>
               <InputGroupInput
                 type={showPassword ? "text" : "password"}
                 id="password"
-                placeholder="Password"
+                placeholder="Campo de contraseña"
               />
               <InputGroupAddon align="inline-end" className="pr-1">
                 <InputGroupButton
@@ -70,28 +70,32 @@ export const InputFieldsForm = () => {
             </InputGroup>
           </div>
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="error">Error Input</Label>
+            <Label htmlFor="error">Campo de error</Label>
             <Input
               type="text"
               id="error"
-              placeholder="Error Input"
+              placeholder="Campo de error"
               className="border-red-500 hover:border-red-500 focus:!border-red-500"
             />
           </div>
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="disabled">Disabled Input</Label>
+            <Label htmlFor="disabled">Campo deshabilitado</Label>
             <Input
               disabled
               type="text"
               id="disabled"
-              placeholder="Disabled Input"
+              placeholder="Campo deshabilitado"
             />
           </div>
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label htmlFor="email-icon">Input with Icon</Label>
+            <Label htmlFor="email-icon">Campo de correo electrónico</Label>
             <div className="relative">
               <Mail className="absolute left-2.5 top-[0.725rem] h-4 w-4 text-secondaryText" />
-              <Input type="email" placeholder="Email" className="pl-8" />
+              <Input
+                type="email"
+                placeholder="Campo de correo electrónico"
+                className="pl-8"
+              />
             </div>
           </div>
         </div>

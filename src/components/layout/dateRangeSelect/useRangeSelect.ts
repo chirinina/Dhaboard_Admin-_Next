@@ -60,8 +60,8 @@ export const useRangeSelect = () => {
     const lowerLabel = label.charAt(0).toLowerCase() + label.slice(1);
     showToast(
       "success",
-      "Global date range updated",
-      `Showing data for ${lowerLabel}`,
+      "Rango de fechas global actualizado",
+      `Mostrando datos para ${lowerLabel}`,
     );
   };
 
@@ -76,8 +76,8 @@ export const useRangeSelect = () => {
       const label = formatCustomLabel(range, locale);
       showToast(
         "success",
-        "Global date range updated",
-        `Showing data for ${label}`,
+        "Rango de fechas global actualizado",
+        `Mostrando datos para ${label}`,
       );
     },
     [setCustomRange, locale, showToast],

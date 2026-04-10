@@ -80,9 +80,9 @@ export const ProfileSidebar = ({ userData }: ProfileSidebarProps) => {
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs text-subtitleText mb-1">Department</p>
+                <p className="text-xs text-subtitleText mb-1">Departamento</p>
                 <p className="text-base max-xl:text-sm text-primaryText">
-                  Sales & Marketing
+                  Ventas y Marketing
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export const ProfileSidebar = ({ userData }: ProfileSidebarProps) => {
             </div>
             <div className="flex justify-between items-center">
               <span className="text-base max-xl:text-sm text-secondaryText">
-                Team Members
+                Miembros del equipo
               </span>
               <span className="text-base max-xl:text-sm font-semibold text-primaryText">
                 28
@@ -139,7 +139,7 @@ export const ProfileSidebar = ({ userData }: ProfileSidebarProps) => {
             </div>
             <div className="flex justify-between items-center">
               <span className="text-base max-xl:text-sm text-secondaryText">
-                Satisfaction Rate
+                Tasa de satisfacción
               </span>
               <span className="text-base max-xl:text-sm font-semibold text-primaryText">
                 98.5%

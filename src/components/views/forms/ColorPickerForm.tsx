@@ -38,7 +38,7 @@ export const ColorPickerForm = () => {
       <CardContent>
         <div className="flex flex-col gap-6">
           <div className="grid w-full max-w-sm items-center gap-[0.8rem]">
-            <Label>Pick a Color</Label>
+            <Label>Selecciona un color</Label>
             <Popover open={openColorPicker} onOpenChange={setOpenColorPicker}>
               <PopoverTrigger asChild>
                 <Button

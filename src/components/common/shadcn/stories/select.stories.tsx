@@ -69,16 +69,16 @@ type Story = StoryObj<typeof Select>;
 export const Default: Story = {
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger aria-label="Select option">
-        <SelectValue placeholder="Select a fruit" />
+      <SelectTrigger aria-label="Selecciona una fruta">
+        <SelectValue placeholder="Selecciona una fruta" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectLabel>Fruits</SelectLabel>
-          <SelectItem value="apple">Apple</SelectItem>
+          <SelectLabel>Frutas</SelectLabel>
+          <SelectItem value="apple">Manzana</SelectItem>
           <SelectItem value="banana">Banana</SelectItem>
-          <SelectItem value="orange">Orange</SelectItem>
-          <SelectItem value="grape">Grape</SelectItem>
+          <SelectItem value="orange">Naranja</SelectItem>
+          <SelectItem value="grape">Uva</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
@@ -88,13 +88,13 @@ export const Default: Story = {
 export const WithLabel: Story = {
   render: (args) => (
     <div className="grid gap-2">
-      <Label>Fruit</Label>
+      <Label>Selecciona una fruta</Label>
       <Select {...args}>
-        <SelectTrigger aria-label="Select option">
-          <SelectValue placeholder="Select..." />
+        <SelectTrigger aria-label="Selecciona una fruta">
+          <SelectValue placeholder="Selecciona una fruta" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="apple">Apple</SelectItem>
+          <SelectItem value="apple">Manzana</SelectItem>
           <SelectItem value="banana">Banana</SelectItem>
           <SelectItem value="orange">Orange</SelectItem>
         </SelectContent>
@@ -107,11 +107,11 @@ export const Disabled: Story = {
   args: { disabled: true },
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger aria-label="Select option">
-        <SelectValue placeholder="Disabled" />
+      <SelectTrigger aria-label="Selecciona una fruta">
+        <SelectValue placeholder="Selecciona una fruta" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="apple">Apple</SelectItem>
+        <SelectItem value="apple">Manzana</SelectItem>
       </SelectContent>
     </Select>
   ),
@@ -120,22 +120,22 @@ export const Disabled: Story = {
 export const WithGroups: Story = {
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger aria-label="Select option">
-        <SelectValue placeholder="Select food" />
+      <SelectTrigger aria-label="Selecciona una fruta">
+        <SelectValue placeholder="Selecciona una fruta" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectLabel>Fruits</SelectLabel>
-          <SelectItem value="apple">Apple</SelectItem>
+          <SelectLabel>Frutas</SelectLabel>
+          <SelectItem value="apple">Manzana</SelectItem>
           <SelectItem value="banana">Banana</SelectItem>
-          <SelectItem value="orange">Orange</SelectItem>
+          <SelectItem value="orange">Naranja</SelectItem>
         </SelectGroup>
         <SelectSeparator />
         <SelectGroup>
-          <SelectLabel>Vegetables</SelectLabel>
-          <SelectItem value="carrot">Carrot</SelectItem>
-          <SelectItem value="potato">Potato</SelectItem>
-          <SelectItem value="broccoli">Broccoli</SelectItem>
+          <SelectLabel>Verduras</SelectLabel>
+          <SelectItem value="carrot">Zanahoria</SelectItem>
+          <SelectItem value="potato">Papa</SelectItem>
+          <SelectItem value="broccoli">Brocoli</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
@@ -145,19 +145,19 @@ export const WithGroups: Story = {
 export const WithDisabledItem: Story = {
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger aria-label="Select option">
-        <SelectValue placeholder="Select a fruit" />
+      <SelectTrigger aria-label="Selecciona una fruta">
+        <SelectValue placeholder="Selecciona una fruta" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectLabel>Fruits</SelectLabel>
-          <SelectItem value="apple">Apple</SelectItem>
+          <SelectLabel>Frutas</SelectLabel>
+          <SelectItem value="apple">Manzana</SelectItem>
           <SelectItem value="banana" disabled>
-            Banana (sold out)
+            Banana (agotado)
           </SelectItem>
-          <SelectItem value="orange">Orange</SelectItem>
+          <SelectItem value="orange">Naranja</SelectItem>
           <SelectItem value="grape" disabled>
-            Grape (sold out)
+            Uva (agotado)
           </SelectItem>
         </SelectGroup>
       </SelectContent>

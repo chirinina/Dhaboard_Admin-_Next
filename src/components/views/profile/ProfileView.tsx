@@ -14,13 +14,13 @@ export const ProfileView = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   const [userData, setUserData] = useState({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
+    name: "Efrain Chiri",
+    email: "chiri@example",
+    phone: "+57 311 222 3333",
     role: "Administrator",
-    joinDate: "January 2024",
-    location: "San Francisco, CA",
-    bio: "E-commerce enthusiast with a passion for data-driven insights and customer experience optimization.",
+    joinDate: "Junio 2024",
+    location: "Santa Cruz Bolivia",
+    bio: "Desarrollador de software con experiencia en el desarrollo de aplicaciones web y móviles.",
   });
 
   return (
@@ -93,10 +93,11 @@ export const ProfileView = () => {
                 <div className="flex items-center justify-between py-3">
                   <div>
                     <p className="text-base max-xl:text-sm font-medium text-primaryText">
-                      Marketing Communications
+                      Comunicaciones de marketing
                     </p>
                     <p className="text-sm text-subtitleText mt-1">
-                      Receive updates about new features and promotions
+                      Recibir actualizaciones sobre nuevas funciones y
+                      promociones
                     </p>
                   </div>
                   <Switch className="max-md:ml-4" defaultChecked />
@@ -114,22 +115,22 @@ export const ProfileView = () => {
               <div className="space-y-3 max-2xl:space-y-2">
                 {[
                   {
-                    action: "Updated product pricing",
-                    time: "2 hours ago",
+                    action: "Actualizó el precio del producto",
+                    time: "2 horas ago",
                     type: "update",
                   },
                   {
-                    action: "Processed customer order #4521",
-                    time: "5 hours ago",
+                    action: "Procesó el pedido del cliente #4521",
+                    time: "5 horas ago",
                     type: "order",
                   },
                   {
-                    action: "Added new product category",
+                    action: "Agregó una nueva categoría de producto",
                     time: "1 day ago",
                     type: "create",
                   },
                   {
-                    action: "Generated monthly report",
+                    action: "Generó el informe mensual",
                     time: "2 days ago",
                     type: "report",
                   },

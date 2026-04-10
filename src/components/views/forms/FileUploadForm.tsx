@@ -27,7 +27,7 @@ export const FileUploadForm = () => {
       </CardHeader>
       <CardContent>
         <div>
-          <Label className="mb-4 block">Dropzone</Label>
+          <Label className="mb-4 block">Sube un archivo</Label>
           <div className="flex items-center justify-center w-full">
             <label
               htmlFor="dropzone-file"
@@ -43,11 +43,11 @@ export const FileUploadForm = () => {
               <div className="flex flex-col items-center justify-center pt-5 pb-6">
                 <UploadCloud className="w-8 h-8 mb-4 text-secondaryText" />
                 <p className="mb-2 text-sm text-secondaryText">
-                  <span className="font-semibold">Click to upload</span> or drag
-                  and drop
+                  <span className="font-semibold">Click para subir</span> o
+                  arrastra y suelta
                 </p>
                 <p className="text-xs text-secondaryText">
-                  SVG, PNG, JPG or GIF (MAX. 800x400px)
+                  SVG, PNG, JPG o GIF (MAX. 800x400px)
                 </p>
               </div>
               <input id="dropzone-file" type="file" className="hidden" />

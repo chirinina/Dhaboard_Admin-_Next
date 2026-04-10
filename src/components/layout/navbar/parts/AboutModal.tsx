@@ -40,50 +40,21 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
         >
           <DialogHeader>
             <DialogTitle className="text-primaryText text-3xl md:text-2xl 1xl:text-3xl w-full text-left mb-4">
-              About
+              Acerca de
             </DialogTitle>
           </DialogHeader>
           <DialogDescription asChild>
             <div className="text-primaryText text-base md:text-sm 1xl:text-base w-full text-left">
               <p className="mb-4 text-base md:text-sm 1xl:text-base">
-                Diolay is a free, open-source dashboard starter designed for
-                building modern SaaS products, internal tools and data-rich
-                admin panels. It provides the UI components, pages and patterns
-                that will give you a solid head start for building your own
-                application
+                Diolay es un dashboard de código abierto diseñado para construir
+                productos SaaS modernos, herramientas internas y paneles de
+                administración ricos en datos. Proporciona los componentes de
+                UI, páginas y patrones que le darán un buen comienzo para
+                construir su propia aplicación.
               </p>
             </div>
           </DialogDescription>
-          <div className="flex flex-row justify-start w-full mt-3 text-base gap-3 sm:gap-4 sm:h-12 md:h-10 1xl:h-12 mb-4">
-            <Button
-              asChild
-              variant="outline"
-              className="flex-1 xsm:flex-initial xsm:w-auto h-full sm:!px-6 gap-2"
-            >
-              <Link
-                href="https://github.com/Diolay/Diolay"
-                target="_blank"
-                tabIndex={0}
-              >
-                <GithubIcon />
-                Front-end
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="flex-1 xsm:flex-initial xsm:w-auto h-full sm:!px-6 gap-2"
-            >
-              <Link
-                href="https://github.com/Diolay/Diolay-backend"
-                target="_blank"
-                tabIndex={0}
-              >
-                <GithubIcon />
-                Back-end
-              </Link>
-            </Button>
-          </div>
+
           <Link
             href="https://Diolay.kit.com/"
             target="_blank"
@@ -93,11 +64,11 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
             <span className="stroke-coloredLinkText w-[18px] h-[18px] [&>svg]:w-[18px] [&>svg]:h-[18px]">
               <MailIcon />
             </span>
-            Subscribe to newsletter
+            Suscríbete al boletín
           </Link>
           <div className="text-primaryText text-base md:text-sm 1xl:text-base w-full text-left">
             <p className="text-left w-full mt-4 text-xl md:text-lg 1xl:text-xl">
-              Tech stack:
+              Tecnologías utilizadas:
             </p>
             <div className="mt-4">
               <p className="text-primaryText mb-2">Front-End:</p>
@@ -128,7 +99,7 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
           </div>
           <div className="text-primaryText text-base md:text-sm 1xl:text-base w-full text-left mt-2">
             <p className="text-left w-full text-xl md:text-lg 1xl:text-xl mb-4">
-              Additional resources:
+              Recursos adicionales:
             </p>
             <ul className="list-disc list-inside pl-3 mb-4">
               <li>
@@ -148,7 +119,7 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
                   tabIndex={0}
                   className="text-coloredLinkText hover:underline font-medium"
                 >
-                  Authentication docs
+                  Documentación de autenticación
                 </Link>
               </li>
               <li>
@@ -158,18 +129,18 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
                   tabIndex={0}
                   className="text-coloredLinkText hover:underline font-medium"
                 >
-                  Lightweight version
+                  Versión ligera
                 </Link>
               </li>
             </ul>
           </div>
           <div className="flex items-center gap-4 mt-6 mb-6 pt-5 border-t border-mainBorder">
             <span className="text-primaryText text-base md:text-sm 1xl:text-base">
-              Made by matt765
+              Hecho por chirinina
             </span>
             <div className="flex items-center gap-2.5">
               <Link
-                href="https://github.com/matt765"
+                href="https://github.com/chirinina"
                 target="_blank"
                 tabIndex={0}
                 className="text-grayIcon hover:text-primaryText transition-colors"
@@ -180,7 +151,7 @@ export const AboutModal = ({ closeModal, returnFocusRef }: AboutModalProps) => {
                 </span>
               </Link>
               <Link
-                href="https://x.com/matt765_dev"
+                href="https://x.com/chirinina_dev"
                 target="_blank"
                 tabIndex={0}
                 className="text-grayIcon hover:text-primaryText transition-colors"

@@ -65,7 +65,7 @@ export const FormValidationForm = () => {
       </CardHeader>
       <CardContent>
         <div className="text-sm text-secondaryText mb-6">
-          Using react-hook-form and yup for validation.
+          Usando react-hook-form y yup para validación.
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -74,16 +74,18 @@ export const FormValidationForm = () => {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-primaryText">Username</FormLabel>
+                  <FormLabel className="text-primaryText">
+                    Nombre de usuario
+                  </FormLabel>
                   <FormControl>
                     <Input
                       className="mt-[0.3rem]"
-                      placeholder="shadcn"
+                      placeholder="Chiri"
                       {...field}
                     />
                   </FormControl>
                   <FormDescription>
-                    This is your public display name.
+                    Este es tu nombre de usuario público.
                   </FormDescription>
                 </FormItem>
               )}
@@ -93,11 +95,13 @@ export const FormValidationForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-primaryText">Email</FormLabel>
+                  <FormLabel className="text-primaryText">
+                    Correo electrónico
+                  </FormLabel>
                   <FormControl>
                     <Input
                       className="mt-[0.3rem]"
-                      placeholder="m@example.com"
+                      placeholder="chiri@example.com"
                       {...field}
                     />
                   </FormControl>
@@ -106,16 +110,16 @@ export const FormValidationForm = () => {
             />
             {Object.keys(form.formState.errors).length > 0 && (
               <p className="text-sm text-errorBg">
-                Please fill in all required fields.
+                Por favor, complete todos los campos requeridos.
               </p>
             )}
             <Button className="mt-4" type="submit">
-              Submit
+              Enviar
             </Button>
             {isSubmitted && (
               <p className="flex items-center gap-2 text-sm text-greenBadgeText mt-3">
                 <Check className="h-4 w-4" />
-                Form submitted
+                Formulario enviado correctamente
               </p>
             )}
           </form>

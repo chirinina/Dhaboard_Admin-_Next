@@ -46,7 +46,7 @@ type User = {
   name: string;
   email: string;
   role: string;
-  status: "active" | "inactive";
+  status: "activo" | "inactivo";
   joinDate: string;
 };
 
@@ -56,7 +56,7 @@ const userTableData: User[] = [
     name: "Sarah Johnson",
     email: "sarah.j@example.com",
     role: "Admin",
-    status: "active",
+    status: "activo",
     joinDate: "2023-01-15",
   },
   {
@@ -64,7 +64,7 @@ const userTableData: User[] = [
     name: "Michael Brown",
     email: "m.brown@example.com",
     role: "Editor",
-    status: "active",
+    status: "activo",
     joinDate: "2023-03-22",
   },
   {
@@ -72,7 +72,7 @@ const userTableData: User[] = [
     name: "Emily Davis",
     email: "emily.d@example.com",
     role: "Viewer",
-    status: "active",
+    status: "activo",
     joinDate: "2023-06-10",
   },
   {
@@ -80,7 +80,7 @@ const userTableData: User[] = [
     name: "David Wilson",
     email: "d.wilson@example.com",
     role: "Editor",
-    status: "inactive",
+    status: "inactivo",
     joinDate: "2023-08-05",
   },
   {
@@ -88,7 +88,7 @@ const userTableData: User[] = [
     name: "Lisa Anderson",
     email: "lisa.a@example.com",
     role: "Admin",
-    status: "active",
+    status: "activo",
     joinDate: "2023-09-18",
   },
   {
@@ -96,7 +96,7 @@ const userTableData: User[] = [
     name: "James Taylor",
     email: "j.taylor@example.com",
     role: "Viewer",
-    status: "active",
+    status: "activo",
     joinDate: "2023-11-30",
   },
   {
@@ -104,7 +104,7 @@ const userTableData: User[] = [
     name: "Robert Martinez",
     email: "r.martinez@example.com",
     role: "Editor",
-    status: "active",
+    status: "activo",
     joinDate: "2024-02-12",
   },
   {
@@ -112,7 +112,7 @@ const userTableData: User[] = [
     name: "Jessica White",
     email: "j.white@example.com",
     role: "Viewer",
-    status: "active",
+    status: "activo",
     joinDate: "2024-03-08",
   },
 ];
@@ -129,14 +129,14 @@ const StatusBadge = ({ status }: { status: string }) => {
     switch (status.toLowerCase()) {
       case "completed":
       case "in stock":
-      case "active":
+      case "activo":
         return "bg-green-500/10 text-green-500 border-green-500/20";
       case "pending":
       case "low stock":
         return "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
       case "failed":
       case "out of stock":
-      case "inactive":
+      case "inactivo":
         return "bg-red-500/10 text-red-500 border-red-500/20";
       default:
         return "bg-gray-500/10 text-gray-400 border-gray-500/20";
@@ -239,12 +239,12 @@ export const UserTable = () => {
     },
     {
       accessorKey: "status",
-      header: "Status",
+      header: "Estado",
       cell: ({ row }) => <StatusBadge status={row.getValue("status")} />,
     },
     {
       accessorKey: "joinDate",
-      header: "Join Date",
+      header: "Fecha de Ingreso",
       cell: ({ row }) => {
         const date = new Date(row.getValue("joinDate"));
         return <span className="text-sm">{date.toLocaleDateString()}</span>;
@@ -252,7 +252,7 @@ export const UserTable = () => {
     },
     {
       id: "actions",
-      header: "Actions",
+      header: "Acciones",
       cell: () => (
         <div className="flex gap-2">
           <Button
@@ -320,13 +320,13 @@ export const UserTable = () => {
                     className="h-full py-2 px-4 text-sm max-xsm:w-full"
                   >
                     <Columns className="h-4 w-4 mr-2" />
-                    Columns
+                    Columnas
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent align="start" className="w-50 p-3">
                   <div className="space-y-2">
                     <div className="text-sm font-medium mb-3">
-                      Toggle columns
+                      Toggle columnas
                     </div>
                     {userTable
                       .getAllLeafColumns()
@@ -368,7 +368,7 @@ export const UserTable = () => {
                     className="h-9.5 py-2 px-4 text-sm gap-2 max-xsm:w-full"
                   >
                     <FilterIcon />
-                    Filter by role
+                    Filtrar por rol
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-44" align="end">
@@ -386,7 +386,7 @@ export const UserTable = () => {
                   <DropdownMenuItem
                     onClick={() => setUserRoleFilter(undefined)}
                   >
-                    Clear Filter
+                    Limpiar filtro
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -400,7 +400,7 @@ export const UserTable = () => {
                       className="h-9.5 py-2 px-4 text-sm gap-2"
                     >
                       <SortIcon />
-                      Sort by
+                      Ordenar por
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-44" align="end">
@@ -438,15 +438,15 @@ export const UserTable = () => {
                       }}
                     >
                       <DropdownMenuRadioItem value="asc">
-                        Ascending
+                        Ascendente
                       </DropdownMenuRadioItem>
                       <DropdownMenuRadioItem value="desc">
-                        Descending
+                        Descendente
                       </DropdownMenuRadioItem>
                     </DropdownMenuRadioGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={() => setUserSorting([])}>
-                      Clear Sorting
+                      Limpiar ordenamiento
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -524,7 +524,7 @@ export const UserTable = () => {
             }}
           >
             <table className="w-full min-w-200">
-              <caption className="sr-only">Users table</caption>
+              <caption className="sr-only">Tabla de usuarios</caption>
               <thead>
                 {userTable.getHeaderGroups().map((headerGroup) => (
                   <tr key={headerGroup.id}>

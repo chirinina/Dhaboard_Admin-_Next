@@ -281,7 +281,7 @@ export const InventoryTable = () => {
   const inventoryColumns: ColumnDef<InventoryItem>[] = [
     {
       accessorKey: "id",
-      header: "Inventory ID",
+      header: "ID de Inventario",
       cell: ({ row }) => (
         <span className="font-mono text-sm">{row.getValue("id")}</span>
       ),
@@ -295,11 +295,11 @@ export const InventoryTable = () => {
     },
     {
       accessorKey: "name",
-      header: "Product Name",
+      header: "Nombre del Producto",
     },
     {
       accessorKey: "quantity",
-      header: "Quantity",
+      header: "Cantidad",
       cell: ({ row }) => {
         const quantity = row.getValue("quantity") as number;
         const reorderPoint = row.original.reorderPoint;
@@ -315,7 +315,7 @@ export const InventoryTable = () => {
     },
     {
       accessorKey: "reorderPoint",
-      header: "Reorder Point",
+      header: "Punto de Reorden",
       cell: ({ row }) => (
         <span className="text-sm text-secondaryText">
           {row.getValue("reorderPoint")}
@@ -324,18 +324,18 @@ export const InventoryTable = () => {
     },
     {
       accessorKey: "supplier",
-      header: "Supplier",
+      header: "Proveedor",
     },
     {
       id: "actions",
-      header: "Actions",
+      header: "Acciones",
       cell: () => (
         <div className="flex gap-2">
           <Button
             variant="ghost"
             size="icon"
             className="h-8 w-8"
-            aria-label="Search product"
+            aria-label="Buscar producto"
           >
             <Search className="h-4 w-4" />
           </Button>
@@ -343,7 +343,7 @@ export const InventoryTable = () => {
             variant="ghost"
             size="icon"
             className="h-8 w-8"
-            aria-label="Edit product"
+            aria-label="Editar producto"
           >
             <Edit className="h-4 w-4" />
           </Button>
@@ -380,7 +380,7 @@ export const InventoryTable = () => {
               className="w-full min-w-200"
               style={{ tableLayout: "fixed" }}
             >
-              <caption className="sr-only">Inventory stock table</caption>
+              <caption className="sr-only">Tabla de inventario</caption>
               <thead>
                 {inventoryTable.getHeaderGroups().map((headerGroup) => (
                   <tr key={headerGroup.id}>
@@ -390,9 +390,9 @@ export const InventoryTable = () => {
                         scope="col"
                         aria-sort={
                           header.column.getIsSorted() === "asc"
-                            ? "ascending"
+                            ? "ascendente"
                             : header.column.getIsSorted() === "desc"
-                              ? "descending"
+                              ? "descendente"
                               : undefined
                         }
                         className={`text-secondaryText font-medium text-left text-sm px-4 py-3 whitespace-nowrap border-t border-b border-inputBorder bg-tableHeaderBg ${

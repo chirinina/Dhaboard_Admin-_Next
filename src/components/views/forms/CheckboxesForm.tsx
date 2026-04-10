@@ -30,22 +30,24 @@ export const CheckboxesForm = () => {
           <div className="flex items-center space-x-3">
             <Checkbox id="terms" />
             <Label htmlFor="terms" withPointer>
-              Default Checkbox
+              Checkbox por defecto
             </Label>
           </div>
           <div className="flex items-center space-x-3">
             <Checkbox id="checked" defaultChecked />
             <Label htmlFor="checked" withPointer>
-              Checked Checkbox
+              Checkbox marcado
             </Label>
           </div>
           <div className="flex items-center space-x-3">
             <Checkbox id="disabled-check" disabled />
-            <Label htmlFor="disabled-check">Disabled Checkbox</Label>
+            <Label htmlFor="disabled-check">Checkbox deshabilitado</Label>
           </div>
           <div className="flex items-center space-x-3">
             <Checkbox id="disabled-checked" disabled defaultChecked />
-            <Label htmlFor="disabled-checked">Disabled Checked Checkbox</Label>
+            <Label htmlFor="disabled-checked">
+              Checkbox deshabilitado marcado
+            </Label>
           </div>
         </div>
       </CardContent>
