@@ -30,7 +30,7 @@ export const UserMenuDropdown = ({
   session,
 }: UserMenuDropdownProps) => {
   const isLoggedIn = session?.isLoggedIn;
-  const username = session?.username || "Guest";
+  const username = session?.username || "Efrain Chiri";
 
   return (
     <div
@@ -50,8 +50,8 @@ export const UserMenuDropdown = ({
           <span className="font-bold text-sm truncate leading-tight">
             {username}
           </span>
-          <span className="text-[11px] text-secondaryText truncate uppercase tracking-wider font-medium opacity-70">
-            {isLoggedIn ? t("auth") : "Nellavio User"}
+          <span className="text-[11px] text-secondaryText truncate tracking-wider font-medium opacity-70">
+            {isLoggedIn ? t("auth") : "Admin"}
           </span>
         </div>
       </div>
