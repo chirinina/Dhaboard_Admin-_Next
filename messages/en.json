@@ -417,7 +417,8 @@
     "forms": "Forms",
     "tables": "Tables",
     "ecommerce": "E-commerce",
-    "components": "Components"
+    "components": "Components",
+    "chat": "Chat"
   },
   "profile": {
     "memberSince": "Member since",
