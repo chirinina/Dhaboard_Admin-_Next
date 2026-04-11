@@ -39,7 +39,7 @@ type Transaction = {
 const advancedTableData: Transaction[] = [
   {
     id: "TXN001",
-    customer: "Efrain Chiri",
+    customer: "Efrain Chiriv",
     email: "chiri@example.com",
     product: "Laptop Pro",
     amount: 1299.99,

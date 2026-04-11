@@ -27,13 +27,12 @@ export const ProfileHeaderCard = ({
       {/* Banner */}
       <div className="h-40 max-3xl:h-32 max-2xl:h-28 relative bg-profileHeaderBg">
         <div className="absolute -bottom-12 max-3xl:-bottom-10 left-1/2 -translate-x-1/2">
-          <div className="w-24 h-24 max-3xl:w-20 max-3xl:h-20 rounded-full bg-primaryBg border-4 border-primaryBg flex items-center justify-center relative">
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-chartSecondaryBg to-chartPrimaryBg dark:from-[rgb(20,60,50)] dark:to-[rgb(55,150,120)] flex items-center justify-center text-white text-2xl max-3xl:text-xl font-bold">
-              {userData.name
-                .split(" ")
-                .map((n) => n[0])
-                .join("")}
-            </div>
+          <div className="w-24 h-24 max-3xl:w-20 max-3xl:h-20 rounded-full bg-primaryBg border-4 border-primaryBg flex items-center justify-center relative overflow-hidden shadow-xl">
+            <img
+              src="/images/avatars/efrain-avatar.png"
+              alt={userData.name}
+              className="w-full h-full object-cover rounded-full"
+            />
           </div>
         </div>
       </div>

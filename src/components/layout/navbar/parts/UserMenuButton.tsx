@@ -1,5 +1,4 @@
 import { ArrowDownSimpleIcon } from "@/assets/icons/ArrowDownSimpleIcon";
-import { UserIcon } from "@/assets/icons/UserIcon";
 import {
   Tooltip,
   TooltipContent,
@@ -102,8 +101,12 @@ export const UserMenuButton = ({
               aria-expanded={userDropdown.isOpen}
               aria-controls="user-dropdown-menu"
             >
-              <div className="flex h-7 w-7 items-center justify-center rounded-full transition-colors duration-300 group-hover:text-mainColor">
-                <UserIcon />
+              <div className="flex h-8 w-8 items-center justify-center rounded-full overflow-hidden border border-mainBorder/30 shrink-0">
+                <img
+                  src="/images/avatars/efrain-avatar.png"
+                  alt={safeSession?.username || "Efrain Chiriv"}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {isLoggedIn && safeSession?.username && (

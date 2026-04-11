@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
-import { UserIcon } from "@/assets/icons/UserIcon";
 import { menuConfig } from "@/config/navigationConfig";
 import { useIsFirstRender } from "@/hooks/useIsFirstRender";
 import { Link } from "@/i18n/navigation";
@@ -89,8 +88,12 @@ export const SideMenuMobile = ({ isMobileMenuOpen }: SideMenuMobileProps) => {
           {isLoaded && isSignedIn && sessionData?.user && (
             <div className="w-full border-t-2 border-mainBorder">
               <div className="flex items-center gap-3 px-6 py-4">
-                <div className="w-10 h-10 rounded-full bg-outlinedButtonBg border border-mainBorder flex items-center justify-center stroke-grayIcon fill-grayIcon">
-                  <UserIcon />
+                <div className="w-10 h-10 rounded-full bg-outlinedButtonBg border border-mainBorder flex items-center justify-center overflow-hidden shrink-0">
+                  <img
+                    src="/images/avatars/efrain-avatar.png"
+                    alt={sessionData.user.email || "Efrain Chiriv"}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-primaryText font-medium text-sm">

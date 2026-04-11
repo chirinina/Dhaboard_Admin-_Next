@@ -30,7 +30,7 @@ export const UserMenuDropdown = ({
   session,
 }: UserMenuDropdownProps) => {
   const isLoggedIn = session?.isLoggedIn;
-  const username = session?.username || "Efrain Chiri";
+  const username = session?.username || "Efrain Chiriv";
 
   return (
     <div
@@ -43,8 +43,12 @@ export const UserMenuDropdown = ({
     >
       {/* User Header */}
       <div className="px-4 py-4 border-b border-mainBorder bg-primaryBg/30 flex items-center space-x-3">
-        <div className="w-10 h-10 rounded-full bg-mainColor/20 flex items-center justify-center text-mainColor shrink-0 shadow-inner">
-          <UserIcon />
+        <div className="w-10 h-10 rounded-full bg-mainColor/20 flex items-center justify-center text-mainColor shrink-0 shadow-inner overflow-hidden border border-mainBorder/30">
+          <img
+            src="/images/avatars/efrain-avatar.png"
+            alt={username}
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="flex flex-col min-w-0">
           <span className="font-bold text-sm truncate leading-tight">
@@ -63,7 +67,7 @@ export const UserMenuDropdown = ({
           className="px-4 py-2.5 flex items-center hover:bg-mainColor/10 transition-colors cursor-pointer group"
           onClick={() => userDropdown.close()}
         >
-          <div className="w-5 flex justify-center items-center text-grayIcon mr-3 group-hover:text-mainColor transition-colors">
+          <div className="w-5 flex justify-center items-center text-grayIcon mr-3 group-hover:text-mainColor transition-colors stroke-grayIcon group-hover:stroke-mainColor">
             <DashboardIcon />
           </div>
           <span className="font-medium group-hover:text-mainColor transition-colors">
