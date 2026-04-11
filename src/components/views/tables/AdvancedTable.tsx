@@ -359,9 +359,9 @@ export const AdvancedTable = () => {
                         scope="col"
                         aria-sort={
                           header.column.getIsSorted() === "asc"
-                            ? "ascendente"
+                            ? "ascending"
                             : header.column.getIsSorted() === "desc"
-                              ? "descendente"
+                              ? "descending"
                               : undefined
                         }
                         className={`text-secondaryText font-medium text-left text-sm px-4 py-3 whitespace-nowrap bg-tableHeaderBg border-t border-b border-inputBorder ${
