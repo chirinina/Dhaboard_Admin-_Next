@@ -228,7 +228,8 @@
     "errorPages": "Páginas de error",
     "error401": "401 No autorizado",
     "error404": "404 No encontrado",
-    "error500": "500 Error del servidor"
+    "error500": "500 Error del servidor",
+    "chat": "Chat"
   },
   "navbar": {
     "auth": "Autenticación",
@@ -565,6 +566,26 @@
     "error500": {
       "title": "Error del servidor",
       "description": "Algo salió mal de nuestra parte. Nuestros servidores encontraron un error inesperado al procesar tu solicitud."
+    }
+  },
+  "chat": {
+    "placeholder": "Escribe un mensaje...",
+    "conversationStarted": "Conversación iniciada",
+    "online": "En línea",
+    "offline": "Desconectado",
+    "busy": "Ocupado",
+    "searchPlaceholder": "Buscar conversaciones...",
+    "lastMessage": "Último mensaje",
+    "noConversations": "No se encontraron conversaciones",
+    "selectConversation": "Selecciona una conversación para empezar a chatear",
+    "connecting": "Conectándote con tus clientes al instante...",
+    "mock": {
+      "m1": "¡Hola! ¿Cómo va todo con el nuevo panel de control?",
+      "m2": "¡Va genial! Acabamos de añadir el nuevo módulo de chat con soporte para imágenes.",
+      "m3": "¡Eso suena increíble! ¿Puedo probarlo?",
+      "m_img": "¡Mira este increíble diseño de panel de control que encontré!",
+      "lastMessage_0": "¡Mira esta increíble vista del panel de control!",
+      "lastMessage_default": "¡Hola! ¿Cómo va todo con el nuevo panel de control?"
     }
   }
 }

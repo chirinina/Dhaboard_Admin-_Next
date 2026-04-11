@@ -90,11 +90,10 @@ export const UserMenuButton = ({
                 navbarDropdowns.closeAllExcept("user");
               }}
               onKeyDown={handleTriggerKeyDown}
-              className={`group flex h-10 items-center justify-center overflow-hidden rounded-full border border-mainBorder text-base text-primaryText stroke-grayIcon fill-grayIcon transition-all duration-300 hover:bg-navbarIconButtonBgHover ${
-                isLoggedIn && safeSession?.username
+              className={`group flex h-10 items-center justify-center overflow-hidden rounded-full border border-mainBorder text-base text-primaryText stroke-grayIcon fill-grayIcon transition-all duration-300 hover:bg-navbarIconButtonBgHover ${isLoggedIn && safeSession?.username
                   ? "w-10 sm:w-auto sm:px-2.5 sm:rounded-xl"
                   : "w-10"
-              }`}
+                }`}
               type="button"
               aria-label={t("openUserMenu")}
               aria-haspopup="menu"
@@ -104,7 +103,7 @@ export const UserMenuButton = ({
               <div className="flex h-8 w-8 items-center justify-center rounded-full overflow-hidden border border-mainBorder/30 shrink-0">
                 <img
                   src="/images/avatars/efrain-avatar.png"
-                  alt={safeSession?.username || "Efrain Chiriv"}
+                  alt={safeSession?.username || "Efrain Chiri"}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -1,4 +1,5 @@
 import { AnalyticsIcon } from "../assets/icons/AnalyticsIcon";
+import { ChatIcon } from "../assets/icons/ChatIcon";
 import { BugIcon } from "../assets/icons/BugIcon";
 import { CalendarIcon } from "../assets/icons/CalendarIcon";
 import { DashboardIcon } from "../assets/icons/DashboardIcon";
@@ -27,6 +28,12 @@ export const menuConfig: MenuConfigEntry[] = [
       { id: "customerSatisfaction", titleKey: "customerSatisfaction" },
       { id: "revenuePerCountry", titleKey: "revenuePerCountry" },
     ],
+  },
+  {
+    type: "item",
+    titleKey: "chat",
+    Icon: ChatIcon,
+    path: "/chat",
   },
   {
     type: "submenu",

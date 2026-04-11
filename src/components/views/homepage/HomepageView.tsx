@@ -55,8 +55,8 @@ export const HomepageView = ({ homepageData }: HomepageViewProps) => {
         </div>
       </div>
       {/* Third row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 1xl:gap-x-6 gap-y-4 1xl:gap-y-6">
-        <div className="hidden lg:block">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-4 1xl:gap-x-6 gap-y-4 1xl:gap-y-6">
+        <div className="col-span-1">
           {homepageData?.bestSellingProducts && (
             <BestSellingProducts
               bestSellingProductsData={homepageData.bestSellingProducts}
@@ -64,7 +64,7 @@ export const HomepageView = ({ homepageData }: HomepageViewProps) => {
             />
           )}
         </div>
-        <div className="col-span-full lg:col-span-2">
+        <div className="col-span-1 lg:col-span-2">
           {homepageData?.customerSatisfaction && (
             <CustomerSatisfaction
               customerSatisfactionData={homepageData.customerSatisfaction}
@@ -73,7 +73,7 @@ export const HomepageView = ({ homepageData }: HomepageViewProps) => {
         </div>
       </div>
       {/* Fourth row */}
-      <div className="hidden md:flex w-full 1xl:w-full">
+      <div className="flex w-full 1xl:w-full">
         <RevenuePerCountry
           revenuePerCountryData={homepageData.revenuePerCountry}
         />

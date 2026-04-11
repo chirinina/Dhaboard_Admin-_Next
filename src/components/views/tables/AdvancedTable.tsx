@@ -39,7 +39,7 @@ type Transaction = {
 const advancedTableData: Transaction[] = [
   {
     id: "TXN001",
-    customer: "Efrain Chiriv",
+    customer: "Efrain Chiri",
     email: "chiri@example.com",
     product: "Laptop Pro",
     amount: 1299.99,
@@ -364,13 +364,11 @@ export const AdvancedTable = () => {
                               ? "descending"
                               : undefined
                         }
-                        className={`text-secondaryText font-medium text-left text-sm px-4 py-3 whitespace-nowrap bg-tableHeaderBg border-t border-b border-inputBorder ${
-                          index === 0 ? "border-l" : ""
-                        } ${
-                          index === headerGroup.headers.length - 1
+                        className={`text-secondaryText font-medium text-left text-sm px-4 py-3 whitespace-nowrap bg-tableHeaderBg border-t border-b border-inputBorder ${index === 0 ? "border-l" : ""
+                          } ${index === headerGroup.headers.length - 1
                             ? "border-r"
                             : ""
-                        } ${header.column.getCanSort() ? "cursor-pointer select-none hover:bg-tableHeaderBgHover" : ""}`}
+                          } ${header.column.getCanSort() ? "cursor-pointer select-none hover:bg-tableHeaderBgHover" : ""}`}
                         onClick={header.column.getToggleSortingHandler()}
                       >
                         <div className="flex items-center">

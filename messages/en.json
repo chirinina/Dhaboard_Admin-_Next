@@ -228,7 +228,8 @@
     "errorPages": "Error Pages",
     "error401": "401 Unauthorized",
     "error404": "404 Not Found",
-    "error500": "500 Server Error"
+    "error500": "500 Server Error",
+    "chat": "Chat"
   },
   "navbar": {
     "auth": "Auth",
@@ -565,6 +566,26 @@
     "error500": {
       "title": "Server Error",
       "description": "Something went wrong on our end. Our servers encountered an unexpected error while processing your request."
+    }
+  },
+  "chat": {
+    "placeholder": "Type a message...",
+    "conversationStarted": "Conversation Started",
+    "online": "Online",
+    "offline": "Offline",
+    "busy": "Busy",
+    "searchPlaceholder": "Search conversations...",
+    "lastMessage": "Last message",
+    "noConversations": "No conversations found",
+    "selectConversation": "Select a conversation to start chatting",
+    "connecting": "Connecting you with your clients instantly...",
+    "mock": {
+      "m1": "Hey! How is everything going with the new dashboard?",
+      "m2": "It's going great! We just added the new Chat module with image support.",
+      "m3": "That sounds awesome! Can I try it out?",
+      "m_img": "Check out this amazing dashboard design I found!",
+      "lastMessage_0": "Check out this amazing dashboard view!",
+      "lastMessage_default": "Hey! How is everything going with the new dashboard?"
     }
   }
 }

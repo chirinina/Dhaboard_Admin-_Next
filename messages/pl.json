@@ -229,7 +229,8 @@
     "errorPages": "Strony błędów",
     "error401": "401 Unauthorized",
     "error404": "404 Not Found",
-    "error500": "500 Server Error"
+    "error500": "500 Server Error",
+    "chat": "Chat"
   },
   "navbar": {
     "auth": "Autoryzacja",
@@ -566,6 +567,26 @@
     "error500": {
       "title": "Błąd serwera",
       "description": "Coś poszło nie tak po naszej stronie. Serwer napotkał nieoczekiwany błąd podczas przetwarzania żądania."
+    }
+  },
+  "chat": {
+    "placeholder": "Wpisz wiadomość...",
+    "conversationStarted": "Rozpoczęto rozmowę",
+    "online": "Dostępny",
+    "offline": "Niedostępny",
+    "busy": "Zajęty",
+    "searchPlaceholder": "Szukaj rozmów...",
+    "lastMessage": "Ostatnia wiadomość",
+    "noConversations": "Nie znaleziono rozmów",
+    "selectConversation": "Wybierz rozmowę, aby zacząć czatować",
+    "connecting": "Łączenie z Twoimi klientami...",
+    "mock": {
+      "m1": "Hej! Jak idzie z nowym panelem?",
+      "m2": "Idzie świetnie! Właśnie dodaliśmy nowy moduł czatu z obsługą obrazów.",
+      "m3": "To brzmi super! Czy mogę to przetestować?",
+      "m_img": "Zobacz ten niesamowity projekt panelu, który znalazłem!",
+      "lastMessage_0": "Zobacz ten niesamowity widok panelu!",
+      "lastMessage_default": "Hej! Jak idzie z nowym panelem?"
     }
   }
 }

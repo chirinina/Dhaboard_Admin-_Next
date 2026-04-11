@@ -14,7 +14,7 @@ export const ProfileView = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   const [userData, setUserData] = useState({
-    name: "Efrain Chiriv",
+    name: "Efrain Chiri",
     email: "chiri@example",
     phone: "+57 311 222 3333",
     role: "Administrator",

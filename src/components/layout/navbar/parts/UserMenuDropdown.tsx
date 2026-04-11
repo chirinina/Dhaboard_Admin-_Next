@@ -8,7 +8,6 @@ import { LanguageIcon } from "@/assets/icons/LanguageIcon";
 import { LogoutIcon } from "@/assets/icons/LogoutIcon";
 import { PaletteIcon } from "@/assets/icons/PaletteIcon";
 import { SettingsIcon } from "@/assets/icons/SettingsIcon";
-import { UserIcon } from "@/assets/icons/UserIcon";
 import { UsersIcon } from "@/assets/icons/UsersIcon";
 import { Link as NavigationLink } from "@/i18n/navigation";
 
@@ -30,7 +29,7 @@ export const UserMenuDropdown = ({
   session,
 }: UserMenuDropdownProps) => {
   const isLoggedIn = session?.isLoggedIn;
-  const username = session?.username || "Efrain Chiriv";
+  const username = session?.username || "Efrain Chiri";
 
   return (
     <div
