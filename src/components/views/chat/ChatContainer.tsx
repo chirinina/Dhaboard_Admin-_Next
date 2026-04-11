@@ -20,7 +20,7 @@ export const ChatContainer = ({ initialCustomers }: ChatContainerProps) => {
   // Initialize conversations when translation is available
   useEffect(() => {
     const baseTime = Date.now();
-    const generated = initialCustomers.slice(0, 10).map((customer, index) => ({
+    const generated: Conversation[] = initialCustomers.slice(0, 10).map((customer, index) => ({
       id: `conv-${index}`,
       customer,
       lastMessage:
